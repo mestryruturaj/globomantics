@@ -7,6 +7,9 @@ function Banner():React.JSX.Element {
                 <div>
                     <img src={GloboLogo} alt="logo" />
                 </div>
+                <div>
+                    Providing houses all over the world
+                </div>
             </header>
         </>
     );
