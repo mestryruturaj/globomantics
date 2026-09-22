@@ -1,13 +1,16 @@
 import GloboLogo from "../assets/GloboLogo.png";
+import styles from "./Banner.module.css";
+
+const { appLogo } = styles;
 
 function Banner():React.JSX.Element {
     return (
         <>
-            <header>
-                <div>
-                    <img src={GloboLogo} alt="logo" />
+            <header className="row mb-4">
+                <div className="col-5">
+                    <img src={GloboLogo} className={appLogo} alt="logo" />
                 </div>
-                <div>
+                <div className="col-7 mt-5">
                     Providing houses all over the world
                 </div>
             </header>
