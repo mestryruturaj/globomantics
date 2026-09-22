@@ -1,21 +1,13 @@
 import GloboLogo from "../assets/GloboLogo.png";
-import styles from "./Banner.module.css";
-
-const { appLogo } = styles;
-const subtitleStyle = {
-    fontStyle: "italic",
-    fontSize: "x-large",
-    color: "coral",
-}
 
 function Banner():React.JSX.Element {
     return (
         <>
-            <header className="row mb-4">
-                <div className="col-5">
-                    <img src={GloboLogo} className={appLogo} alt="logo" />
+            <header>
+                <div>
+                    <img src={GloboLogo} alt="logo" />
                 </div>
-                <div className="col-7 mt-5" style={subtitleStyle}>
+                <div>
                     Providing houses all over the world
                 </div>
             </header>
