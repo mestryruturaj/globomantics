@@ -4,7 +4,8 @@ import styles from "./Banner.module.css";
 const { appLogo } = styles;
 
 interface BannerProps {
-    headerText: string;
+    headerText?: string;
+    children?: React.ReactNode;
 }
 
 function Banner(props: BannerProps):React.JSX.Element {
@@ -15,7 +16,7 @@ function Banner(props: BannerProps):React.JSX.Element {
                     <img src={GloboLogo} className={appLogo} alt="logo" />
                 </div>
                 <div className="col-7 mt-5">
-                    {props.headerText}
+                    {props.children}
                 </div>
             </header>
         </>

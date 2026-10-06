@@ -5,7 +5,9 @@ import './App.css';
 function App():React.JSX.Element {
   return (
     <>
-      <Banner headerText="Providing houses all over the world" />
+      <Banner>
+        <h1>Welcome to Globomantics</h1>
+      </Banner>
     </>
   );
 }
