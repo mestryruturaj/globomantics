@@ -3,7 +3,11 @@ import styles from "./Banner.module.css";
 
 const { appLogo } = styles;
 
-function Banner():React.JSX.Element {
+interface BannerProps {
+    headerText: string;
+}
+
+function Banner(props: BannerProps):React.JSX.Element {
     return (
         <>
             <header className="row mb-4">
@@ -11,7 +15,7 @@ function Banner():React.JSX.Element {
                     <img src={GloboLogo} className={appLogo} alt="logo" />
                 </div>
                 <div className="col-7 mt-5">
-                    Providing houses all over the world
+                    {props.headerText}
                 </div>
             </header>
         </>
