@@ -1,6 +1,7 @@
 
 import Banner from "./components/Banner";
 import './App.css';
+import HouseList from "./components/HouseList";
 
 function App():React.JSX.Element {
   return (
@@ -8,6 +9,7 @@ function App():React.JSX.Element {
       <Banner>
         <h1>Welcome to Globomantics</h1>
       </Banner>
+      <HouseList></HouseList>
     </>
   );
 }
